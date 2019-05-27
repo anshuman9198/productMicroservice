@@ -1,0 +1,29 @@
+
+Arjun Singh <arjun.singh@coviam.com>
+12:10 PM (4 minutes ago)
+
+to me
+
+<dependencyManagement>
+<dependencies>
+<dependency>
+<groupId>org.springframework.cloud</groupId>
+<artifactId>spring-cloud-dependencies</artifactId>
+<version>${spring-cloud.version}</version>
+<type>pom</type>
+<scope>import</scope>
+</dependency>
+</dependencies>
+</dependencyManagement>
+
+
+
+<dependency>
+<groupId>org.springframework.cloud</groupId>
+<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+</dependency>
+
+spring.application.name= order-service
+
+#eureka.client.serviceUrl.defaultZone= http://localhost:8761/eureka/
+
